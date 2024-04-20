@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Músicas</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1>Lista de Músicas</h1>
+        </div>
+        <div class="banner">
+            <img src="img/homestudio.png">
+        </div>
+    </header>
+
+    <section class="searchItem">
+        <input type="text" id="buscarMusica" placeholder="Pesquisar nome da música:">
+        <button onclick="getSong()" class="addBtn">Buscar</button>
+    </section>
+
+    <section class="items">
+        <table id="mySong">
+            <tr>
+                <th>Nome</th>
+                <th>BPM</th>
+                <th>Escala</th>
+            </tr>
+        </table>
+    </section>
+
+     <!-- Opções para adicionar uma nova música -->
+     <section class="newItem">
+        <input type="text" id="newInput" placeholder="Adicionar nova música:">
+        <input type="text" id="newQuantity" placeholder="BPM:">
+        <input type="text" id="newPrice" placeholder="Escala:">
+        <button onclick="newItem()" class="addBtn">Adicionar</button>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>BPM</th>
+                <th>Escala</th>
+                <th><img src="img/lixeira.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
